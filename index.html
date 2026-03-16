@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer portfolio, bienvenido.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="header">bash - ramOS</div>
+        <div class="terminal" id="terminalWindow">
+            <section id="terminal">
+                <div class="command">Succesful Login - <span class="error" id="date"></span></div>
+                <div class="title">My First Attempt Portfolio </div>
+                Welcome to my first attempt of a serious Portfolio website. ill be adding more stuff soon. To see the commands list type <span class="command">help</span> 
+            </section>
+
+            <div class="prompt">
+                <span class="command">$</span> <span class="title">gestuser</span> <input type="text" id="promptInput">
+            </div>
+        </div>
+    </main>
+
+    
+    <div class="hidden" id="promptClone">
+        <span class="command">$</span> <span class="title">gestuser</span> <span class="promptCloneInput"></span> 
+        <div class="promptCloneContent"></div>
+    </div>
+    
+      
+    <div class="hidden" id="help">
+        <div class="sectionTitle">Available Commands: </div>
+        <div class="indent">
+            <div>
+              <span class="command">about</span>:
+              <div class="indent">about me</div>
+            </div>
+            <div>
+                <span class="command">skills</span>:
+                <div class="indent">tools and small tech i use</div>
+            </div>
+            <div>
+                <span class="command">socials</span>:
+                <div class="indent">list of my socials</div>
+            </div>
+            <div>
+                <span class="command">education</span>:
+                <div class="indent">all about my education</div>
+            </div>
+            <div>
+                <span class="command">experience</span>:
+                <div class="indent">my work experiences</div>
+            </div>
+            <div>
+                <span class="command">projects</span>:
+                <div class="indent">some side projects</div>
+            </div>
+            <div>
+                <span class="command">clear</span>
+                <div class="indent">clear the terminal</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden" id="about">
+        <div class="sectionTitle">About Me: </div>
+        <div class="indent">
+            Hello, my name is <span class="command">Abraham Ramos Esparza</span>, a 19 years old from México trying to learn and give the best results. 
+        </div>
+    </div>
+
+    <div class="hidden" id="skills">
+        <div class="sectionTitle">Skills: </div>
+        <div class="indent">
+            <div>
+                <span class="command">Coding</span>:
+                <div class="indent">
+                    <span class="title">HTML,</span>
+                    <span class="title">CSS,</span>
+                    <span class="title">JavaScript,</span>
+                    <span class="title">Git,</span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <span class="command">Languages</span>:
+        <div class="indent">
+            <span class="title">Spanish</span>
+            <span class="title">English (Advanced)</span>
+        </div>
+
+        <span class="command">Other technologies</span>:
+        <div class="indent">
+            <span class="title">Basic C++,</span>
+            <span class="title">very simple bots with Python,</span>
+            <span class="title">automatized simple Microsoft Office tasks with Python-pptx library.</span>
+        </div>
+    </div>
+
+    <div class="hidden" id="socials">
+        <div class="sectionTitle">Socials: </div>
+        <div class="indent">
+            <span class="title">GitHub</span> - <span class="command"><a href="https://github.com/BrahaME123">https://github.com/BrahaME123</a></span>
+        </div>
+
+        <div class="indent">
+            <span class="title">Twitter</span> - <span class="command"><a href="https://x.com/AParza">https://x.com/AParza</a></span>
+        </div>
+
+        <div class="indent">
+            <span class="title">Instagram</span> - <span class="command"><a href="https://www.instagram.com/arzaabraham/">https://www.instagram.com/arzaabraham/</a></span>
+        </div>
+        
+    </div>
+
+    <div class="hidden" id="projects">
+        <div class="sectionTitle">Projects: </div>
+
+        <div class="indent">
+            <span class="title">Playing around with OpenGL and C++</span> - <a href="https://github.com/BrahaME123/OpenGlWindow">OpenGlWindow</a>
+        </div>
+        <div class="indent">
+            <span class="title">ramOS - Portfolio</span> - <a href="#">you're here!</a>
+        </div>
+    </div>
+
+
+    <div class="hidden" id="experience">
+        <div class="sectionTitle">experience: </div>
+
+        <div class="indent">
+            <span class="title">American Solutions Group</span> - <a href="americansolutionsgroup.com.mx">Maquinaria ASG</a>
+        </div>
+        <div class="indent">
+            <span class="title">RompeRenta</span> - <a href="#">Link to Github</a>
+        </div>
+        <div class="indent">
+            <span class="title">JayLuxuryYachts Cancún</span> - not available right now :(
+        </div>
+    </div>
+
+
+    <div class="hidden" id="education">
+        <div class="sectionTitle">Formation: </div>
+        <div class="indent">
+            <span class="title">CBTIs 258 - Técnico Programador | 2022 - 2025</span>
+        </div>
+        <div class="indent">
+            Technical High School.
+        </div>
+    </div>
+    
+    <footer></footer>
+<script src="/js/main.js"></script>
+</body>
+</html>
