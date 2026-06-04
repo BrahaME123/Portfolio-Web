@@ -54,6 +54,13 @@ const selectCommandBlock = (command) => {
         case 'clear':
             return clearCommand();
 
+        case 'blog':
+             const blogElement = getCommandTemplate('blog');
+             blogCommand().then(el => {
+                 blogElement.querySelector('#blog-content').appendChild(el);
+             });
+            return blogElement;
+
         default:
             return notFoundCommand(command);
     }
