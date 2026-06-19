@@ -6,6 +6,7 @@
     <title>Abe's site</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="contenedor">
@@ -28,19 +29,42 @@
         </div>
 
         <div class="projects">
-            <h2>my projects</h2>
-
-
-
-
+            <!--TODO: add start and finish date on the projects.-->
+            <div class="projects-header">
+                <h2>my humble projects.</h2>
+                <div class="filtro-buttons">
+                    <button  data-filter="all">all</button>
+                    <button  data-filter="c#">c#</button>
+                    <button  data-filter="python">python</button>
+                    <button  data-filter="c++">c++</button>
+                </div>
+            </div>
             
-            <div class="project-item">
+            <div class="project-item" data-tag="c++">
 
                 <div class="project-header">
                     <a href="" class="project-name">EX</a>
                 </div>
 
                 <p class="project-desc">descripcion</p>
+                
+                <div class="project-meta">
+                    <span class="lang"><span class="lang-dot"></span> C++</span>
+                    <a class="project-github" href="#">view repo</a>
+                    
+                </div>
+
+            </div>
+
+
+            <div class="project-item" data-tag="python">
+
+                <div class="project-header">
+                    <a href="" class="project-name">EX</a>
+                </div>
+
+                <p class="project-desc">descripcion</p>
+
                 
                 <div class="project-meta">
                     <span class="lang"><span class="lang-dot"></span> Python</span>
@@ -49,25 +73,7 @@
                 </div>
 
             </div>
-
-
-            <div class="project-item">
-
-                <div class="project-header">
-                    <a href="" class="project-name">EX</a>
-                </div>
-
-                <p class="project-desc">descripcion</p>
-
-                
-                <div class="project-meta">
-                    <span class="lang"><span class="lang-dot"></span> Python</span>
-                    <a class="project-github" href="#">view repo</a>
-                    
-                </div>
-
-            </div>
-            <div class="project-item">
+            <div class="project-item" data-tag="c#">
 
                 <div class="project-header">
                     <a href="" class="project-name">EX</a>
@@ -76,13 +82,13 @@
                 <p class="project-desc">descripcion</p>
                 
                 <div class="project-meta">
-                    <span class="lang"><span class="lang-dot"></span> Python</span>
+                    <span class="lang"><span class="lang-dot"></span> C#</span>
                     <a class="project-github" href="#">view repo</a>
                 </div>
 
             </div>
 
-            <div class="project-item">
+            <div class="project-item" data-tag="c++">
 
                 <div class="project-header">
                     <a href="" class="project-name">EX</a>
@@ -91,7 +97,7 @@
                 <p class="project-desc">descripcion</p>
                 
                 <div class="project-meta">
-                    <span class="lang"><span class="lang-dot"></span> Python</span>
+                    <span class="lang"><span class="lang-dot"></span> C++</span>
                     <a class="project-github" href="#">view repo</a>
 
                 </div>
@@ -114,5 +120,7 @@
         </footer>
     
     </div>    
+    <script src="js/filtro.js"></script>
+
 </body>
 </html>

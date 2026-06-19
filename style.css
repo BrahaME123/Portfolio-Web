@@ -87,10 +87,19 @@ a:hover{
     padding-top:5rem;
     display:flex;
     flex-direction:column;
+
+}
+.projects-header{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
 }
 .projects h2{
     font-size:20px;
-    padding-bottom:20px;
     align-self:start;
     letter-spacing:0.05em;
 }
@@ -139,11 +148,13 @@ a:hover{
     display:flex;
     flex-direction: row;
     padding:2rem 0;
+    color: var(--gray);
     
     justify-content:space-between;
 }
 .footer{
     background-color:red;
+    color: var(--gray);
 }
 .footer p{
     color:var(--gray);
@@ -152,4 +163,25 @@ a:hover{
 }
 i{
     font-size: 18px;
+}
+
+.filtro-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+button{
+    
+    width: 85px;
+    padding:3px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: var(--text);
+}
+button:hover{
+    background-color: var(--header);
+    
 }
