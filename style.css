@@ -185,3 +185,25 @@ button:hover{
     background-color: var(--header);
     
 }
+
+
+.mensaje{
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+}
+.mensaje-contenedor{
+    width: 600px;
+    padding: 20px;
+}
+.mensaje-contenedor form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mensaje-contenedor button{
+    margin: 0 auto;
+}
