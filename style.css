@@ -13,7 +13,6 @@
     --command:#68ff99;
     --error:#ff8383;
 
-    /*hacer: implementar más estilos, oscuro y tambien tipo vscode*/    
 
 
 
@@ -31,7 +30,9 @@ body{
 
 .contenedor{
     max-width:900px;
+    
     margin:0 auto;
+
 }
 
 a{
@@ -53,6 +54,7 @@ a:hover{
 
 .navbar{
     padding:1.5rem 0;
+
 }
 
 .navbar ul{
@@ -67,24 +69,29 @@ a:hover{
 
 
 .main{
+    height: 100vh;
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items:center;
-    padding:50px;
+    padding-bottom: 5rem;   
 }
 .main h1{
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
     font-size:40px;
     padding:2rem 0;
     font-weight:900;
+    align-self: flex-start;
+    
 }
 .main p{
     letter-spacing: 1.5px;
-    padding-top: 20px;
+    font-size: 15px;
 }
 
 .projects{
-    padding-top:5rem;
+    transition: all 0.2s ease-in;
     display:flex;
     flex-direction:column;
 
@@ -100,8 +107,9 @@ a:hover{
 }
 .projects h2{
     font-size:20px;
+    
     align-self:start;
-    letter-spacing:0.05em;
+    letter-spacing:2px;
 }
 .project-github{
     display:flex;
@@ -189,12 +197,13 @@ button:hover{
 
 .mensaje{
     display: flex;
-    padding-top: 2rem;
+    padding-top: 5rem;
     flex-direction: column;    
     justify-content: center;
     align-items: center;
 }
 .mensaje-contenedor{
+
     width: 600px;
     padding: 20px;
 }
@@ -206,4 +215,242 @@ button:hover{
 
 .mensaje-contenedor button{
     margin: 0 auto;
+}
+.mensaje-contenedor textarea {
+    background-color: var(--background);
+    border: none;
+    color: var(--text);
+}
+
+.mensaje-contenedor input{
+    color: var(--text);
+    background-color: var(--background);
+    border: none;
+}
+
+
+
+
+.experiencia{
+    padding: 3rem 0;
+}
+
+
+.experiencia-contenedor{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+
+}
+.exp-card{
+    height: 100px;
+    overflow: hidden;
+    
+}
+.exp-card span{
+    color: var(--gray);
+}
+.exp-card p{
+    padding-top: 30px   ;
+    letter-spacing: 1px;
+}
+.music-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.music {
+    width: 100%;
+
+}
+
+.music-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 2rem;
+}
+
+.music-header h4 {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.music-icon {
+    color: var(--text-secondary, #8a8a8a);
+    opacity: 0.7;
+}
+
+.music-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    color: var(--command);
+    background-color: var(--background-secondary, #1a1a1a);
+    padding:1rem;
+    align-items:center ;
+}
+
+.cover {
+    width: 50px;
+    height: 50px;
+
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid var(--border, #333);
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.track-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.artist-name {
+    font-size: 1.1rem;
+    opacity: 0.7;
+    
+    margin: 0 auto;
+}
+
+.status {
+    font-size: 0.75rem;
+    text-transform: lowercase;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+
+.status.is-live {
+    color: var(--accent, #5fbf8e);
+    opacity: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.status.is-live::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 0 1.2rem;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .navbar li {
+        padding: 0 10px;
+    }
+
+    .main {
+        height: auto;
+        padding: 4rem 0 3rem;
+        gap: 2rem;
+    }
+    .main h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .main p {
+        font-size: 14px;
+    }
+
+    .projects-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .filtro-buttons {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    button {
+        width: auto;
+        padding: 5px 10px;
+    }
+
+    .music-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+       
+    .cover {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 4px;
+        border: 1px solid var(--border, #333);
+    }
+
+    .experiencia-contenedor {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+    .exp-card {
+        height: auto;
+        width: 100%;
+    }
+
+    .mensaje-contenedor {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .foot-contenedor {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main h1 {
+        font-size: 22px;
+    }
+    .navbar li {
+        padding: 0 6px;
+        font-size: 13px;
+    }
+    .track-name {
+        font-size: 0.8rem;
+    }
+    .artist-name {
+        font-size: 0.95rem;
+    }
 }

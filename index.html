@@ -1,142 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abe's site</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abe's site</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-    <div class="contenedor">
-            <div class="navbar">
-            <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">resume</a></li>
-                <li><a href="">projects</a></li>
-                <li><a href="">contact</a></li>
-                <li><a href="">blog</a></li>
-                <li><a href="">experimental</a></li>
-            </ul>
+     <div class="navbar">
+        <ul>
+            <li><a href="./index.html">home</a></li>
+            <li><a href="">resume</a></li>
+            <li><a href="">projects</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">blog</a></li>
+            <li><a href="">experimental</a></li>
+        </ul>
+
+        
+    </div>
+<div class="contenedor">
+       
+
+    <div class="main">
+        <h1>Abe.</h1>
+        <p>ola, me llamo Abraham, soy de la ciudad de las montañas Monterréy, México. Bienvenido a mi pequeño rincón de internet, quiero hacer una mezcla de resume/portfolio, y web personal, mis proyectos los programo a mano para aprender de forma autodidacta y a la antigua.  Desde chico me cautivo el internet, las computadoras, y tengo un gusto genuino por la programación, me encanta equivocarme y aprender. </p>
+
+        <div id="music" class="music">
+            <pre id="music-content">
+            </pre>  
         </div>
+ 
+    </div>
 
-        <div class="main">
-            <h1>
-                Abe's place    
-            </h1>
-            <p>im a beginner at telling the 'putah what to do. i like web development, graphics programming, and breaking things to see how they work</p>
-        </div>
-
-        <div class="projects">
-            <!--TODO: add start and finish date on the projects.-->
-            <div class="projects-header">
-                <h2>my humble projects.</h2>
-                <div class="filtro-buttons">
-                    <button  data-filter="all">all</button>
-                    <button  data-filter="c#">c#</button>
-                    <button  data-filter="python">python</button>
-                    <button  data-filter="c++">c++</button>
-                </div>
-            </div>
-            
-            <div class="project-item" data-tag="c++">
-
-                <div class="project-header">
-                    <a href="" class="project-name">EX</a>
-                </div>
-
-                <p class="project-desc">descripcion</p>
-                
-                <div class="project-meta">
-                    <span class="lang"><span class="lang-dot"></span> C++</span>
-                    <a class="project-github" href="#">view repo</a>
-                    
-                </div>
-
-            </div>
-
-
-            <div class="project-item" data-tag="python">
-
-                <div class="project-header">
-                    <a href="" class="project-name">EX</a>
-                </div>
-
-                <p class="project-desc">descripcion</p>
-
-                
-                <div class="project-meta">
-                    <span class="lang"><span class="lang-dot"></span> Python</span>
-                    <a class="project-github" href="#">view repo</a>
-                    
-                </div>
-
-            </div>
-            <div class="project-item" data-tag="c#">
-
-                <div class="project-header">
-                    <a href="" class="project-name">EX</a>
-                </div>
-
-                <p class="project-desc">descripcion</p>
-                
-                <div class="project-meta">
-                    <span class="lang"><span class="lang-dot"></span> C#</span>
-                    <a class="project-github" href="#">view repo</a>
-                </div>
-
-            </div>
-
-            <div class="project-item" data-tag="c++">
-
-                <div class="project-header">
-                    <a href="" class="project-name">EX</a>
-                </div>
-
-                <p class="project-desc">descripcion</p>
-                
-                <div class="project-meta">
-                    <span class="lang"><span class="lang-dot"></span> C++</span>
-                    <a class="project-github" href="#">view repo</a>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="mensaje">
-                <h4>send me a message!</h4>
-
-            <div class="mensaje-contenedor">
-                
-                <form action="" method="post">
-                    <label for="name">name</label>
-                    <input type="text" id="name" placeholder="ur nickname">
-
-
-                    <label for="message">message</label>
-                    <textarea id="message" name="message" placeholder="write me something" rows="6" required></textarea>
-                    <button type="submit">send</button>
-                
-                </form>
+        
+    
+    <div class="projects">
+        <!--TODO: add start and finish date on the projects.-->
+        <div class="projects-header">
+            <h2>my humble projects</h2>
+            <div class="filtro-buttons">
+                <button  data-filter="all">all</button>
+                <button  data-filter="c#">c#</button>
+                <button  data-filter="python">python</button>
+                <button  data-filter="c++">c++</button>
             </div>
         </div>
         
+        <div class="project-item" data-tag="c++">
 
-
-
-        <footer>
-            <div class="foot-contenedor">
-                <p>&copy; Abe. All rights reserved.</p>
-                <div class="foot-socials">
-                    <a href="https://github.com/BrahaME123">    <i class="fa-brands fa-github"></i></a>
-                    <a href="https://x.com/AParza"><i class="fa-brands fa-x-twitter"></i></a>
-                </div>
+            <div class="project-header">
+                <a href="" class="project-name">desktop app that automates the generation of invitations. exporting them directly as ready-to-use .pptx files.</a>
             </div>
-        </footer>
+
+            <p class="project-desc">desktop app to help the staff from the direction of Participación Ciudadana, General Escobedo municipality. automate the creation of meeting invitation slides, filling out a form is all it takes to generate a ready-to-print .pptx file.</p>
+            
+            <div class="project-meta">
+                <span class="lang"><span class="lang-dot"></span> Python</span>
+                <span class="lang"><span class="lang-dot"></span> Tkinter</span>
+                <span class="lang"><span class="lang-dot"></span> CustomTkinter</span>
+                <span class="lang"><span class="lang-dot"></span> Python-pptx Library   </span>
+
+
+                <a class="project-github" href="https://github.com/BrahaME123/pptx-template-powerpoint">view repo</a>
+                
+            </div>
+
+        </div>
+
+
+        <div class="project-item" data-tag="python">
+
+            <div class="project-header">
+                <a href="" class="project-name">Portfolio Web</a>
+            </div>
+
+            <p class="project-desc">personal portfolio site built with html, css and vanilla javascript, with a custom blog backed by a mysql database and a rest api. still in progress.</p>
+
+            
+            <div class="project-meta">
+                <span class="lang"><span class="lang-dot"></span> HTML</span>
+|               <span class="lang"><span class="lang-dot"></span> CSS</span>
+|               <span class="lang"><span class="lang-dot"></span> JavaScript</span>
+|               <span class="lang"><span class="lang-dot"></span> PHP</span>
+|               <span class="lang"><span class="lang-dot"></span> MySQL</span>
+                <a class="project-github" href="#">view repo</a>
+                
+            </div>
+
+        </div>
+        <div class="project-item" data-tag="c#">
+
+            <div class="project-header">
+                <a href="" class="project-name">EX</a>
+            </div>
+
+            <p class="project-desc">descripcion</p>
+            
+            <div class="project-meta">
+                <span class="lang"><span class="lang-dot"></span> C#</span>
+                <a class="project-github" href="#">view repo</a>
+            </div>
+
+        </div>
+
+        <div class="project-item" data-tag="c++">
+
+            <div class="project-header">
+                <a href="" class="project-name">EX</a>
+            </div>
+
+            <p class="project-desc">descripcion</p>
+            
+            <div class="project-meta">
+                <span class="lang"><span class="lang-dot"></span> C++</span>
+                <a class="project-github" href="#">view repo</a>
+
+            </div>
+        </div>
+        
+        
+         <div class="experiencia">
+        <h2>Past jobs</h2>
+        <div class="experiencia-contenedor">
+            <div class="exp-card">
+                <h5>American Solutions Group</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi ipsa </p>
+                <span>2026-2026</span>
+            </div>
+
+            <div class="exp-card">
+                <h5>Northeast Cartel</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi ipsa </p>
+                <span>2026-2026</span>
+
+            </div>                    
+
+            <div class="exp-card">
+                <h5>American Solutions Group</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi ipsa </p>
+                <span>2026-2026</span>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="socials">
+
+        
+    </div>
+
+    </div>
+
+   
     
-    </div>    
-    <script src="js/filtro.js"></script>
+    <footer>
+        <div class="foot-contenedor">
+            <p>&copy; Abe. All rights reserved.</p>
+            <div class="foot-socials">
+                <a href="https://github.com/BrahaME123">    <i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/AParza"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</div>   
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/nowplaying.js"></script> 
+<script src="js/filtro.js"></script>
 
 </body>
 </html>
