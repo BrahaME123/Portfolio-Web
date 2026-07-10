@@ -1,0 +1,14 @@
+# entorno virtual
+venv/
+
+# variables secretas
+.env
+
+# cache de python
+__pycache__/
+*.pyc
+
+# logs
+*.log
+
+config.php
