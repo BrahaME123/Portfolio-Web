@@ -48,7 +48,7 @@ $(document).ready(function () {
             var html = `
             <div class="music">
                     <div class="music-header">
-                        <h4>ultima reproduccion</h4>
+                        <h4>last played</h4>
                     </div>
                     <div class="music-content">
                         <img class="cover" src="${imgUrl}" alt="">
@@ -70,12 +70,12 @@ $(document).ready(function () {
                 $("#music").html(`
                 <div class="music">
             <div class="music-header">
-                <h4>ultima reproduccion</h4>
+                <h4>listening to</h4>
             </div>
             <div class="music-content">
                 <div class="track-info">
-                    <p class="track-name">${trackName}</p>
-                    <p class="artist-name">${artistName}</p>
+                    <p class="track-name">${artistName}</p>
+                    <p class="artist-name">${trackName}</p>
                     <span class="status ${isPlaying ? "is-live" : ""}">
                         ${isPlaying ? "now playing" : "last played"}
                     </span>
