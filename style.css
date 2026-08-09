@@ -245,7 +245,7 @@ button:hover{
 }
 .exp-card{
     height: 100px;
-    overflow: hidden;
+    overflow:visible;
     
 }
 .exp-card span{
