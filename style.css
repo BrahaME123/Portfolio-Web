@@ -245,6 +245,7 @@ button:hover{
 }
 .exp-card{
     height: 100px;
+    width:450px;
     overflow:visible;
     
 }
