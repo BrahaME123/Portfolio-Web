@@ -5,12 +5,14 @@
 }
 .main-dashboard{
     display:flex;
-    height:100vh;
     flex-direction:row;
+    color:black;
     justify-content:space-between;
     align-items:center;
 }
 .contenedor{
+    height: 100vh;
+    background-color:#DDDDDD;
     min-width:100%;
 }
 .widget{
@@ -24,11 +26,15 @@
 .widget--clima{
     flex-direction: column;
     justify-content: center;
-    background-color:#DDDDDD;
+    background-color:#b8b5b5;
     color:black;
+    height: 100px;
     align-items: center;
 }
 .widget--ideas{
+    background-color:#b8b5b5;
     text-decoration: none;
-
+}
+.widget--ideas ul{
+    list-style: none;
 }
